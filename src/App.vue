@@ -1,17 +1,14 @@
 <template>
   <div>
-    App
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
-<style>
-</style>
+<style></style>
