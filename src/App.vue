@@ -1,14 +1,31 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <TheHeader />
+
+    <div class="flex content-container">
+      <TheEditor class="w-1/2" />
+      <ThePreview class="w-1/2" />
+    </div>
   </div>
 </template>
 
 <script>
+import TheHeader from './components/TheHeader.vue'
+import TheEditor from './components/TheEditor.vue'
+import ThePreview from './components/ThePreview.vue';
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    TheHeader,
+    TheEditor,
+    ThePreview,
+  },
 };
 </script>
 
-<style></style>
+<style>
+  .content-container {
+    height: calc(100vh - 50px);
+  }
+</style>

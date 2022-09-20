@@ -1,6 +1,6 @@
 <template>
-  <div>
-    
+  <div class="editor-container">
+    Editor
   </div>
 </template>
 
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+.editor-container {
+  background: yellow;
+}
 </style>
